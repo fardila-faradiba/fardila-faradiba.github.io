@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    background-color: #867e82;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Style */
+header {
+    background-color: #fbf9fa;
+    color: rgb(242, 242, 250);
+    padding: 20px 0;
+    text-align: center;
+    
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(254, 248, 254);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f5faf9;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: rgb(243, 205, 222);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #2b1e26;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid #373335;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Tentang Saya */
+#tentang-saya p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;     /* Membuat foto berbentuk lingkaran */
+    object-fit: cover;      /* Memastikan foto proporsional */
+    border: 2px solid #333; /* Border hitam untuk memberi batas pada foto */
+
+    
+}
+
+/* Pendidikan, Pengalaman, Kemampuan */
+#pendidikan ul,
+#pengalaman ul,
+#kemampuan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pendidikan ul li,
+#pengalaman ul li,
+#kemampuan ul li {
+    background-color: #4ccfc1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pendidikan ul li:hover,
+#pengalaman ul li:hover,
+#kemampuan ul li:hover {
+    background-color: #05503b;
+}
+
+#pendidikan ul li h3,
+#pengalaman ul li h3,
+#kemampuan ul li h3 {
+    font-size: 1.5em;
+    color: #490303;
+}
+
+#pendidikan ul li p,
+#pengalaman ul li p,
+#kemampuan ul li p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Portofolio */
+#portofolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+#portofolio .gallery .portfolio-item {
+    flex-basis: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#portofolio .gallery .portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+#portofolio .gallery .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#portofolio .gallery .portfolio-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+/* Kontak */
+#kontak {
+    text-align: center;
+}
+
+#kontak p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#kontak a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#kontak a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    section {
+        width: 90%;
+    }
+    #portofolio .gallery .portfolio-item {
+        flex-basis: 100%;
+    }
+    
+}
+
